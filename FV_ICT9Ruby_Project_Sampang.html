@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Converter</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+    	body {
+    		font-family: 'Pacifico', cursive;
+    		text-align: center;
+			border: 5px solid #e69f43;
+			border-radius: 4px;
+			padding: 14px 40px;
+			margin: 100px;
+			margin-left: 100px;
+			margin-right: 100px;
+			margin-top: 200px;
+			color: #e69f43;
+			text-shadow: 2px 2px 3px #e69f43;
+			font-size: 35px;
+    	}
+    	.button{
+    		border: 5px solid ##e69f43
+;
+			border-radius: 4px;
+			padding: 14px 40px;
+			color: #e69f43;
+			background-color: #e69f43;
+			text-shadow: 1px 0 #0a0a0a, 0 1px #0a0a0a, 1px 0 #0a0a0a, 0 -1px #0a0a0a;
+			font-size: 20px;
+    	}
+         .input{
+			border: 7px solid #e69f43;
+			border-radius: 5px;
+			color: #e69f43;
+			background-color: ##0a0a0a;
+			padding: 10px 15px;
+		}
+    	
+    </style>
+</head>
+<body>
+<body style="background: url(notebook-green-math-ruler-cute-education-powerpoint-background_c60b6f87b6__960_540.avif);
+             background-size: 100%;
+             background-repeat: repeat; ">
+    <div class="container bg-warning title">
+    	<h1><center>It's Daniela's Converter!</h1></center>
+    	<hr><center>
+	     Millimeter! : <input class="input" type="number" id="unitOne" value="0">
+		<hr>
+		Convert it! :
+		<button onclick="cm()" class="button">Centimeters</button>
+		<button onclick="m()" class="button">Meters</button>
+		<button onclick="km()" class="button">Kilometers</button>
+
+    </div>
+</body>
+<script type="text/javascript">
+	let x;
+			let y;
+			function cm(){
+				let x = parseInt(document.getElementById("unitOne").value);
+				alert(x / 10);
+			}
+			function m(){
+				let x = parseInt(document.getElementById("unitOne").value);
+				alert(x / 1000);
+			}
+			function km(){
+				let x = parseInt(document.getElementById("unitOne").value);
+				alert(x / 1000000);
+			}
+</script>
+
+</html>
